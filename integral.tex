@@ -1,0 +1,83 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+
+% PACKAGES
+\usepackage{amsmath} % For extended formatting
+\usepackage{amssymb} % For math symbols
+\usepackage{amsthm} % For proof environment
+\usepackage{array} % For tables
+\usepackage{enumerate} % For lists
+\usepackage{extramarks} % For headers and footers
+\usepackage{fancyhdr} % For custom headers
+\usepackage{graphicx} % For inserting images
+\usepackage{multicol} % For multiple columns
+\usepackage{verbatim} % For displaying code
+\usepackage{tkz-euclide}
+\usepackage{pgfplots}
+
+% SET UP HEADER AND FOOTER
+\pagestyle{fancy}
+\lhead{\MyCourse} % Top left header
+\chead{\MyTopicTitle} % Top center header
+\rhead{\MyAssignment} % Top right header
+\lfoot{\MyCampus} % Bottom left footer
+\cfoot{} % Bottom center footer
+\rfoot{\MySemester} % Bottom right footer
+\renewcommand\headrulewidth{0.4pt} % Size of the header rule
+\renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+\newcommand{\MyCourse}{Math 241}
+\newcommand{\MyTopicTitle}{Integrals}
+\newcommand{\MyAssignment}{Name: \qquad \qquad \qquad}
+\newcommand{\MySemester}{FALL 2019}
+\newcommand{\MyCampus}{University of Hawaii at Manoa}
+\begin{document}
+\section{Definition of Integral}
+An integral of a function is the anti-derivative of it. 
+\begin{equation}
+    \int f(x) dx = F(x) + C
+\end{equation}
+\textbf{Caution} If the integral is indefinite \textbf{(No specific bounds)} then write down the letter C. 
+\subsection{Properties of the Integral}
+\begin{equation}
+    \int k f(x) dx = k \int f(x) dx
+\end{equation}
+where k is any constant.
+\begin{equation}
+    \int -f(x) dx = - \int f(x) dx 
+\end{equation}
+\begin{equation}
+    \int f(x) \pm g(x) dx= \int f(x) dx \pm \int g(x) dx  
+\end{equation}
+\begin{equation}
+    \int a dx = ax + C
+\end{equation} where a is a constant 
+
+\begin{equation}
+    \int x^{n} = \frac{x^{n+1}}{n+1}
+\end{equation}
+\subsection{Properties of Definite Integrals}
+\textbf{Definite Integrals} means an integral with a certain bounds. 
+Written as $\int_{a}^{b} f(x) dx$ where f(x) represents a certain function and b and a represents the boundary areas. \newline 
+\begin{equation}
+    \int_{a}^{b} f(x) dx = - \int_{b}^{a} f(x) dx 
+\end{equation}
+\begin{equation}
+      \int_{a}^{a} f(x) dx = 0
+\end{equation}
+\begin{equation}
+    \int_{a}^{b}f(x)dx \pm \int_{b}^{c}f(x)dx = \int_{a}^{c} f(x)dx
+\end{equation}
+where a, b, and c represents a boundary point. 
+\section{Integration by Substitution}
+
+\section{Trigonometry Integrals}
+\begin{itemize}
+    \item $\int sin(x) dx = -cos(x)+C$
+    \item $\int cos(x) dx = sin(x)+C$
+    \item $\int sec^{2}(x)dx = tan(x)+C$
+    \item $\int csc^{2}(x)dx = cot(x)+C$
+    \item $\int sec(x)tan(x) dx = sec(x)+C$
+    \item $\int csc(x)cot(x) dx = -csc(x) + C $
+\end{itemize}
+
+\end{document}
