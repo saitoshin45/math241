@@ -1,0 +1,184 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+
+% PACKAGES
+\usepackage{amsmath} % For extended formatting
+\usepackage{amssymb} % For math symbols
+\usepackage{amsthm} % For proof environment
+\usepackage{array} % For tables
+\usepackage{enumerate} % For lists
+\usepackage{extramarks} % For headers and fo
+% DOCUMENT FORMATING
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+
+% PACKAGES
+\usepackage{amsmath} % For extended formatting
+\usepackage{amssymb} % For math symbols
+\usepackage{amsthm} % For proof environment
+\usepackage{array} % For tables
+\usepackage{enumerate} % For lists
+\usepackage{extramarks} % For headers and footers
+\usepackage{fancyhdr} % For custom headers
+\usepackage{graphicx} % For inserting images
+\usepackage{multicol} % For multiple columns
+\usepackage{verbatim} % For displaying code
+\usepackage{tkz-euclide}
+\usepackage{pgfplots}
+
+% SET UP HEADER AND FOOTER
+\pagestyle{fancy}
+\lhead{\MyCourse} % Top left header
+\chead{\MyTopicTitle} % Top center header
+\rhead{\MyAssignment} % Top right header
+\lfoot{\MyCampus} % Bottom left footer
+\cfoot{} % Bottom center footer
+\rfoot{\MySemester} % Bottom right footer
+\renewcommand\headrulewidth{0.4pt} % Size of the header rule
+\renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+
+\newcommand{\MyCourse}{Math 241}
+\newcommand{\MyTopicTitle}{Derivatives}
+\newcommand{\MyAssignment}{Name: \qquad \qquad \qquad}
+\newcommand{\MySemester}{FALL 2019}
+\newcommand{\MyCampus}{University of Hawaii at Manoa}
+\begin{document}
+
+\section{Definition of a Derivative}
+\begin{equation}
+    \lim_{h\to0}\frac{f(x+h)-f(x)}{h}
+\end{equation}
+Derivative tells us the change of the function. \newline 
+For instance if f(x) tells us the position of an object, then its derivative (written as $f'(x) or \frac{d}{dx}f(x)$) tells us the speed. 
+\section{Derivative Properties}
+Sometimes memorizing these derivatives properties will help you in the later calculus. 
+\begin{center}
+    \textbf{Caution}
+\end{center}
+Carefully read the direction of the problem as it may ask you to solve using 
+the definition of a derivatives. Even with the correct answer it may hurt your score.   
+\subsection{Constant Rule}
+\begin{equation}
+    \frac{d}{dx}c = 0
+\end{equation} where c is any real number \newline
+A derivative of any constant is equal to 0.
+\subsection{derivative of a single variable}
+\begin{equation}
+    \frac{d}{dx}x = 1
+\end{equation}
+where x is a variable to the first power
+\subsection{Power Rule}
+\begin{equation}
+    \frac{d}{dx}x^{n} = nx^{n-1}
+\end{equation}
+where n is a real number 
+\subsection{Product Rule}
+\begin{equation}
+    \frac{d}{dx}(f(x)\times g(x)) = (\frac{d}{dx}f(x))g(x) + f(x)(\frac{d}{dx}g(x))
+\end{equation}
+\subsection{Quotient Rule}
+\begin{equation}
+        \frac{d}{dx}((f(x) \div g(x))=\frac{(\frac{d}{dx}f(x))g(x) - f(x)\frac{d}{dx}g(x)}{(g(x)^{2})}
+\end{equation}
+
+
+
+\section{Trigonometry Derivatives}
+\begin{itemize}
+    \item $\frac{d}{dx}sin(x) = cos(x)$
+    \newline 
+    \item$\frac{d}{dx}cos(x) = -sin(x) $
+    \newline 
+    \item $\frac{d}{dx}tan(x) = sec^{2}(x)$ 
+    \newline 
+    \item $\frac{d}{dx} sec(x) = sec(x)tan(x)$
+    \newline
+    \item $\frac{d}{dx} csc(x) = -csc(x)cot(x)$
+    \newline 
+    \item $\frac{d}{dx} cot(x) = -csc^{2}(x)$
+    \newline 
+    \item \textbf{advice} trigonometry functions that start with the letter 'C' have a negative sign on its their derivative. 
+\end{itemize}
+\section{Application of Derivatives}
+\begin{itemize}
+    \item \textbf{Critical Points}: x=c is a critical point of a function if $ f'(c)=0 $ or $f'(c)=$ DNE
+    \item \textbf{Maximum & Minimum}: since the derivatives tells us if the slope of the graph is increasing or decreasing we can find the use it to find the highest or/and lowest points
+    \item \textbf{Tangent Lines}
+    \begin{equation}
+        y= f(a) + f'(a)(x-a)  
+    \end{equation}based on the points (a, f(a))
+\end{itemize}
+\end{document}oters
+\usepackage{fancyhdr} % For custom headers
+\usepackage{graphicx} % For inserting images
+\usepackage{multicol} % For multiple columns
+\usepackage{verbatim} % For displaying code
+\usepackage{tkz-euclide}
+\usepackage{pgfplots}
+
+% SET UP HEADER AND FOOTER
+\pagestyle{fancy}
+\lhead{\MyCourse} % Top left header
+\chead{\MyTopicTitle} % Top center header
+\rhead{\MyAssignment} % Top right header
+\lfoot{\MyCampus} % Bottom left footer
+\cfoot{} % Bottom center footer
+\rfoot{\MySemester} % Bottom right footer
+\renewcommand\headrulewidth{0.4pt} % Size of the header rule
+\renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+\newcommand{\MyCourse}{Math 241}
+\newcommand{\MyTopicTitle}{Integrals}
+\newcommand{\MyAssignment}{Name: \qquad \qquad \qquad}
+\newcommand{\MySemester}{FALL 2019}
+\newcommand{\MyCampus}{University of Hawaii at Manoa}
+\begin{document}
+\section{Definition of Integral}
+An integral of a function is the anti-derivative of it. 
+\begin{equation}
+    \int f(x) dx = F(x) + C
+\end{equation}
+\textbf{Caution} If the integral is indefinite \textbf{(No specific bounds)} then write down the letter C. 
+\subsection{Properties of the Integral}
+\begin{equation}
+    \int k f(x) dx = k \int f(x) dx
+\end{equation}
+where k is any constant.
+\begin{equation}
+    \int -f(x) dx = - \int f(x) dx 
+\end{equation}
+\begin{equation}
+    \int f(x) \pm g(x) dx= \int f(x) dx \pm \int g(x) dx  
+\end{equation}
+\begin{equation}
+    \int a dx = ax + C
+\end{equation} where a is a constant 
+
+\begin{equation}
+    \int x^{n} = \frac{x^{n+1}}{n+1}
+\end{equation}
+\subsection{Properties of Definite Integrals}
+\textbf{Definite Integrals} means an integral with a certain bounds. 
+Written as $\int_{a}^{b} f(x) dx$ where f(x) represents a certain function and b and a represents the boundary areas. \newline 
+\begin{equation}
+    \int_{a}^{b} f(x) dx = - \int_{b}^{a} f(x) dx 
+\end{equation}
+\begin{equation}
+      \int_{a}^{a} f(x) dx = 0
+\end{equation}
+\begin{equation}
+    \int_{a}^{b}f(x)dx \pm \int_{b}^{c}f(x)dx = \int_{a}^{c} f(x)dx
+\end{equation}
+where a, b, and c represents a boundary point. 
+\section{Integration by Substitution}
+
+\section{Trigonometry Integrals}
+\begin{itemize}
+    \item $\int sin(x) dx = -cos(x)+C$
+    \item $\int cos(x) dx = sin(x)+C$
+    \item $\int sec^{2}(x)dx = tan(x)+C$
+    \item $\int csc^{2}(x)dx = cot(x)+C$
+    \item $\int sec(x)tan(x) dx = sec(x)+C$
+    \item $\int csc(x)cot(x) dx = -csc(x) + C $
+\end{itemize}
+
+\end{document}
