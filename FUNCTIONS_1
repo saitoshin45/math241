@@ -1,0 +1,58 @@
+% DOCUMENT FORMATING
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+
+% PACKAGES
+\usepackage{amsmath} % For extended formatting
+\usepackage{amssymb} % For math symbols
+\usepackage{amsthm} % For proof environment
+\usepackage{array} % For tables
+\usepackage{enumerate} % For lists
+\usepackage{extramarks} % For headers and footers
+\usepackage{fancyhdr} % For custom headers
+\usepackage{graphicx} % For inserting images
+\usepackage{multicol} % For multiple columns
+\usepackage{verbatim} % For displaying code
+\usepackage{tkz-euclide}
+\usepackage{pgfplots}
+
+% SET UP HEADER AND FOOTER
+\pagestyle{fancy}
+\lhead{\MyCourse} % Top left header
+\chead{\MyTopicTitle} % Top center header
+\rhead{\MyAssignment} % Top right header
+\lfoot{\MyCampus} % Bottom left footer
+\cfoot{} % Bottom center footer
+\rfoot{\MySemester} % Bottom right footer
+\renewcommand\headrulewidth{0.4pt} % Size of the header rule
+\renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+% ----------
+% TITLES AND NAMES 
+% ----------
+
+\newcommand{\MyCourse}{Math 241}
+\newcommand{\MyTopicTitle}{FUNCTIONS}
+\newcommand{\MyAssignment}{Name: \qquad \qquad \qquad}
+\newcommand{\MySemester}{Fall 2019}
+\newcommand{\MyCampus}{University of Hawaii at Manoa}
+
+
+
+\begin{document}
+\textbf{Directions:} show all your work and simplify your answers 
+\begin{enumerate}
+    \item \textbf{Graph the the following functions by hand and state the domains and the range.}
+    \begin{itemize}
+        \item [a)] $ f(x) = - x^{2}$
+        \vspace{4cm}
+        \item[b)] $f(x) = 2\sqrt{x+1}$
+        \vspace{4cm}
+    \end{itemize}
+    \item \textbf{Find the functions $f \circ g, g\circ f, f \circ f, $ and $ g \circ g$} 
+    \begin{itemize}
+        \item [a)] $f(x) = x^{4}-3$ and $g(x) 1-6x$ \vspace{4cm}
+        \item [b)] $f(x) = 5x-4$ and $g(x) = cos(x)$ 
+        \vspace{4cm}
+    \end{itemize}
+\end{enumerate}
+\end{document}
