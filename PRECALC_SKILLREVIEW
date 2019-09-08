@@ -1,0 +1,142 @@
+% DOCUMENT FORMATING
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+
+% PACKAGES
+\usepackage{amsmath} % For extended formatting
+\usepackage{amssymb} % For math symbols
+\usepackage{amsthm} % For proof environment
+\usepackage{array} % For tables
+\usepackage{enumerate} % For lists
+\usepackage{extramarks} % For headers and footers
+\usepackage{fancyhdr} % For custom headers
+\usepackage{graphicx} % For inserting images
+\usepackage{multicol} % For multiple columns
+\usepackage{verbatim} % For displaying code
+\usepackage{tkz-euclide}
+\usepackage{pgfplots}
+
+% SET UP HEADER AND FOOTER
+\pagestyle{fancy}
+\lhead{\MyCourse} % Top left header
+\chead{\MyTopicTitle} % Top center header
+\rhead{\MyAssignment} % Top right header
+\lfoot{\MyCampus} % Bottom left footer
+\cfoot{} % Bottom center footer
+\rfoot{\MySemester} % Bottom right footer
+\renewcommand\headrulewidth{0.4pt} % Size of the header rule
+\renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+% ----------
+% TITLES AND NAMES 
+% ----------
+
+\newcommand{\MyCourse}{Math 241}
+\newcommand{\MyTopicTitle}{Precalculus Review}
+\newcommand{\MyAssignment}{Name: \qquad \qquad \qquad}
+\newcommand{\MySemester}{Fall 2019}
+\newcommand{\MyCampus}{University of Hawaii at Manoa}
+
+% ----------
+% BEGIN DOCUMENT
+% ----------
+\begin{document}
+\begin{center}
+    \textbf{EXPONENT}
+\end{center}
+\begin{itemize}
+    \item MULTIPLICATION \newline 
+    If the two numbers have the same base but different exponents, you can multiply the two numbers by finding the sum of the two exponents \newline 
+    \textbf{EXAMPLE}
+    $x^{2}x^{4} = x^{6}$
+    \item DIVISION \newline 
+    If the numbers have the same base but different exponents, you can divide the numbers by finding the difference. \newline 
+     $
+        \frac{x^{4}}{x^{2}}=x^{2}
+        $
+\end{itemize}
+
+\begin{center}
+    \textbf{FRACTIONS}
+\end{center}
+\begin{itemize}
+    \item ADDING/SUBTRACTING 
+    Find the if the fractions have common denominators. If not, modifify the fractions so they have common denominators. \newline 
+    \textbf{WARNING}
+    When changing the denominator of the fraction, do not forget to also change the numerator. \newline 
+    After finding the common denominators, do the appropriate operations to the fractions. \newline 
+     \begin{center}
+    $
+    \frac{12}{24}+\frac{12}{24}-\frac{1}{24}=\frac{23}{24}
+    $
+    \end{center}
+    \item MULTIPLICATION \newline 
+    Unlike addition or subtraction, there is no need to find the common denominators. Just multiply the denominator and numerator across.   
+     \begin{center}
+    $
+    \frac{2}{24}*\frac{3}{5}=\frac{6}{120}
+    $
+    Reduced form $ \frac{1}{40}$
+    \end{center}
+    \item DIVISION \newline 
+    Unlike, addition or subtraction, there is no need to find the common denominators. However, in order to divide fractions, its necessary to find the reciprocal of the dividend (Flipping the numerator and the denominator) and multiply the fractions. \newline 
+      \begin{center}
+    $
+    \frac{2}{6} \div \frac{4}{5} = 
+    $
+    \newline 
+    \textbf{Flip the } \newline 
+    $
+    \frac{2}{6} \times \frac{5}{4} = \frac{10}{24}
+    $
+    \newline 
+    reduced form of the answer: $ \frac{5}{12}
+    $
+    \end{center}
+\end{itemize}
+
+\begin{center}
+    TRIGONOMETRY
+\end{center}
+\textbf{Basic Trig Functions}
+\begin{itemize}
+    \item sin(x)
+    \item cos(x)
+    \item tan(x)
+    \item sec(x)
+    \item csc(x)
+    \item cot(x)
+\end{itemize}
+\textbf{Basic Trig Identities}\newline
+\textbf{Quotient Identity}\newline 
+\begin{itemize}
+    $
+    \item tan(x) = \frac{sin(x)}{cos(x)} \newline
+    \item cot(x) = \frac{cos(x)}{sin(x)} \newline 
+    $
+\end{itemize}
+\textbf{Reciprocal Identity}\newline
+\begin{itemize}
+    \item $ csc(x) = \frac{1}{sin(x)}$
+    \item $sec(x) = \frac{1}{cos(x)}$
+    \item $cot(x) = \frac{1}{tan(x)}$
+    \item $sin(x) = \frac{1}{csc(x)}$
+    \item $cos(x) = \frac{1}{sec(x)}$
+    \item $tan(x) = \frac{1}{cot(x)}$
+    
+\end{itemize}
+
+\textbf{Pythagorean Identity}\newline 
+\begin{itemize}
+    \item $ sin^{2}(x)+cos^{2}(x) =1$
+    \item $ sin^{2}(x) = 1-cos^{2}(x) $
+    \item $ cos^{2}(x) = 1 - sin^{2}(x)$
+    \item $tan^{2}(x) + 1 =  sec^{2}(x)$
+    \item $sec^{2}(x)-1 = tan^{2}(x)$
+\end{itemize}
+\textbf{Double Angle Trig}
+\begin{itemize}
+    \item $ sin(2\theta) = 2sin(\theta)cos(\theta)$
+    \item $ cos(2\theta) = cos^{2}(\theta)-sin^{2}(\theta)$
+    \item $cos(2\theta) = 2cos^{2}(\theta) -1 $
+\end{itemize}
+\end{document}
